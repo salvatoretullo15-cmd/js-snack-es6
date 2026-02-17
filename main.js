@@ -1,3 +1,6 @@
+console.log(Object);
+
+
 /*
 Snack 1
 Creare un array di oggetti:
@@ -20,9 +23,11 @@ Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e pe
 Stampare a schermo la bici con peso minore
 */
 
-console.log(Object);
 
-
+/*
+Creare un array di oggetti:
+Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
+*/
 const bici_da_corsa=[{
     nome:"specialissima RC",
     unita_di_misura:"kg",
@@ -79,9 +84,10 @@ const bici_da_corsa=[{
     weight:8
 }
 ]
+console.log(bici_da_corsa);
 
 const light_bike=[]
-
+//Stampare a schermo la bici con peso minore
 for (let i = 0; i < bici_da_corsa.length; i++) {
     const bike = bici_da_corsa[i];
     console.log(bike.weight);
@@ -92,3 +98,64 @@ for (let i = 0; i < bici_da_corsa.length; i++) {
 };
 
 console.log("bici leggere trovate:",light_bike);
+
+/*
+Snack2**
+Creare un array di oggetti di squadre di calcio.
+Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti.
+Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0.
+Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”.
+Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
+*/
+const football_teams=[{
+    name:"Alpha Ethniki",
+    point_made:0 ,
+    fouls_suffered:0
+},
+{
+    name:"Olympiacos Piraneus",
+    point_made:0 ,
+    fouls_suffered:0
+},
+{
+    name:"Panathinaikos",
+    point_made:0 ,
+    fouls_suffered:0
+},
+{
+    name:"PAOK Salonicco",
+    point_made:0 ,
+    fouls_suffered:0
+},
+{
+    name:"Aris Salonicco",
+    point_made:0 ,
+    fouls_suffered:0
+},
+{
+    name:"Asteras Tripolis",
+    point_made:0 ,
+    fouls_suffered:0
+},
+{
+    name:"OFI Creta",
+    point_made:0 ,
+    fouls_suffered:0
+},
+{
+    name:"Levadeiakos",
+    point_made:0 ,
+    fouls_suffered:0
+},
+{
+    name:"Panserraìkos",
+    point_made:0 ,
+    fouls_suffered:0
+}
+]
+
+console.log(football_teams);
+
+/*
+Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”
+*/
