@@ -84,7 +84,8 @@ const bici_da_corsa=[{
     weight:8
 }
 ]
-console.log(bici_da_corsa);
+
+//console.log(bici_da_corsa);
 
 const light_bike=[]
 //Stampare a schermo la bici con peso minore
@@ -154,8 +155,24 @@ const football_teams=[{
 }
 ]
 
-console.log(football_teams);
+//console.log(football_teams);
 
 /*
 Generare numeri random al posto degli 0 nelle proprietà “punti” fatti e “falli subiti”
 */
+
+for (let i = 0; i < football_teams.length; i++) {
+    // Genera un numero random tra 0 e 100 
+    football_teams[i].point_made = Math.floor(Math.random() * 101);
+    
+    // Genera un numero random tra 0 e 100 
+    football_teams[i].fouls_suffered = Math.floor(Math.random() * 101);
+}
+
+console.log(football_teams);
+
+/*
+Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console
+*/
+
+const name_fouls=[]
