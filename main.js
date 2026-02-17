@@ -175,4 +175,15 @@ console.log(football_teams);
 Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console
 */
 
-const name_fouls=[]
+const team_stats = [];
+
+for (let i = 0; i < football_teams.length; i++) {
+    const team = football_teams[i];
+    
+    team_stats.push({
+        name: team.name,
+        fouls_suffered: team.fouls_suffered
+    });
+}
+console.log(team_stats);
+
